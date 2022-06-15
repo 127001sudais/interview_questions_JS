@@ -21,7 +21,7 @@ function findMe(target, start, end) {
         return findMe(target, start, middle - 1)
     }
 
-    // if middle value if less then the target ,we put the starting index as the "middle"
+    // if middle value is less then the target ,we put the starting index as the "middle"
     if (arr[middle] < target) {
         return findMe(target, middle + 1, end)
     }
